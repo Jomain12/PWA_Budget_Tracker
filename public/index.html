@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="manifest" href="/manifest.json">
+  <body>
+  <title>Budget Tracker</title>
+  <h1>Budget Tracker</h1>
+  <h2>Keep better track of your finances!</h2>
+  <h4>Click on a note to edit its title or content</h4>
+  <div id="user-input">
+    <p>Budget</p>
+    <h4 placeholder="budgetamount" type="text" id="budget"> budget: </h4>
+    <br />
+    <p>Note</p>
+    <textarea placeholder="put notes to help you keep track of things you want to purchase" id="note"></textarea>
+    <!-- <div id="buttons">
+      <div id="action-button">
+        <button id="make-new">Submit</button>
+      </div>
+      <button id="clear-all">Delete$</button>
+    </div> -->
+    <!-- add new expense or deposit nav -->
+  <div id="" class="">
+    <form class="add-recipe container section">
+      <h6 >New deposit or expense</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="deposit/expense" id="bankExchange" type="text" class="validate">
+        <label for="type">Deposit or Expense</label>
+      </div><br>
+      <div class="input-field">
+        <input placeholder="500" id="amount" type="text" class="validate">
+        <label for="amount">Amount%</label>
+      </div><br>
+      <div class="input-field center">
+        <button class="btn-small" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+  <div id="results"></div>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("serviceworker.js").then(reg => {
+          console.log("We found your service worker file!", reg);
+        });
+      });
+    }
+  </script>
+
+
+  <!-- <script src="/public/assets/js/ui.js"></script> -->
+</body>
+</html>
